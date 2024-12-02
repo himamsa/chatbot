@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // Simulate an API call for authentication
-    if (username === 'user' && password === 'password') { // Replace with actual validation logic
+    if (username === 'testuser' && password === 'password1') { // Replace with actual validation logic
         localStorage.setItem('jwt', 'your-token-here'); // Store token
         window.location.href = 'index.html'; // Redirect to index.html after successful login
     } else {
