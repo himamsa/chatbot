@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dialogflow CX Chatbot</title>
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('jwt')) {
+            window.location.href = 'login.html'; // Redirect to login page if not logged in
+        }
+    </script>
 </head>
 <body>
     <h1>Welcome to My Chatbot</h1>
